@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04DDA5E3-19D5-466A-9622-B946E8304A33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TOEIC_Practice.GUI</RootNamespace>
+    <AssemblyName>TOEIC_Practice.GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TOEIC_Practice.GUI.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdminAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminAccount.Designer.cs">
+      <DependentUpon>FrmAdminAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminEts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminEts.Designer.cs">
+      <DependentUpon>FrmAdminEts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGroup.Designer.cs">
+      <DependentUpon>FrmAdminGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminMain.Designer.cs">
+      <DependentUpon>FrmAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminQuestion.Designer.cs">
+      <DependentUpon>FrmAdminQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminStats.Designer.cs">
+      <DependentUpon>FrmAdminStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminTest.Designer.cs">
+      <DependentUpon>FrmAdminTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChonDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChonDe.Designer.cs">
+      <DependentUpon>FrmChonDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChonPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChonPart.Designer.cs">
+      <DependentUpon>FrmChonPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangNhap.Designer.cs">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKetQua.Designer.cs">
+      <DependentUpon>FrmKetQua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLamBai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLamBai.Designer.cs">
+      <DependentUpon>FrmLamBai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLichSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLichSu.Designer.cs">
+      <DependentUpon>FrmLichSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThongKeNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThongKeNguoiDung.Designer.cs">
+      <DependentUpon>FrmThongKeNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXemLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXemLai.Designer.cs">
+      <DependentUpon>FrmXemLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaPathHelper.cs" />
+    <Compile Include="MediaStorageHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcChoiceQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcChoiceQuestion.Designer.cs">
+      <DependentUpon>UcChoiceQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcP1_SingleQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcP1_SingleQuestion.Designer.cs">
+      <DependentUpon>UcP1_SingleQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcAudioPlayerSimple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcAudioPlayerSimple.Designer.cs">
+      <DependentUpon>UcAudioPlayerSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcP2_SingleQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcP2_SingleQuestion.Designer.cs">
+      <DependentUpon>UcP2_SingleQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcP5_SingleQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcP5_SingleQuestion.Designer.cs">
+      <DependentUpon>UcP5_SingleQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcPart3Group.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcPart3Group.Designer.cs">
+      <DependentUpon>UcPart3Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcPart7Group.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcPart7Group.Designer.cs">
+      <DependentUpon>UcPart7Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcPassageBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcPassageBlock.Designer.cs">
+      <DependentUpon>UcPassageBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcReview_Part5Question.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReview_Part5Question.Designer.cs">
+      <DependentUpon>UcReview_Part5Question.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcReview_Part6Group.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReview_Part6Group.Designer.cs">
+      <DependentUpon>UcReview_Part6Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcReview_Part6QuestionItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReview_Part6QuestionItem.Designer.cs">
+      <DependentUpon>UcReview_Part6QuestionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcReview_PassageGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReview_PassageGroup.Designer.cs">
+      <DependentUpon>UcReview_PassageGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcReview_Question.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReview_Question.Designer.cs">
+      <DependentUpon>UcReview_Question.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAdminAccount.resx">
+      <DependentUpon>FrmAdminAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminEts.resx">
+      <DependentUpon>FrmAdminEts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminGroup.resx">
+      <DependentUpon>FrmAdminGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminMain.resx">
+      <DependentUpon>FrmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminQuestion.resx">
+      <DependentUpon>FrmAdminQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminStats.resx">
+      <DependentUpon>FrmAdminStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminTest.resx">
+      <DependentUpon>FrmAdminTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChonPart.resx">
+      <DependentUpon>FrmChonPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangNhap.resx">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKetQua.resx">
+      <DependentUpon>FrmKetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLamBai.resx">
+      <DependentUpon>FrmLamBai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXemLai.resx">
+      <DependentUpon>FrmXemLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UcP1_SingleQuestion.resx">
+      <DependentUpon>UcP1_SingleQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcAudioPlayerSimple.resx">
+      <DependentUpon>UcAudioPlayerSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcP2_SingleQuestion.resx">
+      <DependentUpon>UcP2_SingleQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcP5_SingleQuestion.resx">
+      <DependentUpon>UcP5_SingleQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcPassageBlock.resx">
+      <DependentUpon>UcPassageBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcReview_Part5Question.resx">
+      <DependentUpon>UcReview_Part5Question.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcReview_Part6Group.resx">
+      <DependentUpon>UcReview_Part6Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcReview_Question.resx">
+      <DependentUpon>UcReview_Question.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TOEIC_Practice.BLL\TOEIC_Practice.BLL.csproj">
+      <Project>{084e1526-3259-4082-8895-3fbaa2cdd00d}</Project>
+      <Name>TOEIC_Practice.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TOEIC_Practice.DAL\TOEIC_Practice.DAL.csproj">
+      <Project>{d4cd942a-38c0-42af-9f78-0328194d8b0c}</Project>
+      <Name>TOEIC_Practice.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TOEIC_Practice.DTO\TOEIC_Practice.DTO.csproj">
+      <Project>{d487273d-c18a-4303-9b02-aa374b770ecc}</Project>
+      <Name>TOEIC_Practice.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\Audio\Part1\2024_T1_P1_Q1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part1\2024_T1_P1_Q2.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part1\2024_T1_P1_Q3.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part1\2024_T1_P1_Q4.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part1\2024_T1_P1_Q5.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part1\2024_T1_P1_Q6.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part1\2025_T2_P1_Q1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part2\2024_T1_P2_Q7.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part2\2024_T1_P2_Q8.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part3\2024_T1_P3_Q32_33_34.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part3\2024_T1_P3_Q68_69_70.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part4\2024_T1_P4_Q71_72_73.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Part4\2024_T1_P4_Q98_99_100.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part1\2024_T1_P1_Q1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part1\2024_T1_P1_Q2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part1\2024_T1_P1_Q3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part1\2024_T1_P1_Q4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part1\2024_T1_P1_Q5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part1\2024_T1_P1_Q6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part1\2024_T2_P1_Q1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part3\2024_T1_P3_Q68_69_70.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Part4\2024_T1_P4_Q98_99_100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

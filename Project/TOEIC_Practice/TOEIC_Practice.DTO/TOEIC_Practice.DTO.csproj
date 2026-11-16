@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D487273D-C18A-4303-9B02-AA374B770ECC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TOEIC_Practice.DTO</RootNamespace>
+    <AssemblyName>TOEIC_Practice.DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminAccountDTO.cs" />
+    <Compile Include="Admin\AdminAnswerDTO.cs" />
+    <Compile Include="Admin\AdminEtsDTO.cs" />
+    <Compile Include="Admin\AdminQuestionDTO.cs" />
+    <Compile Include="Admin\AdminQuestionGroupDTO.cs" />
+    <Compile Include="Admin\AdminQuestionOptionBatchDTO.cs" />
+    <Compile Include="Admin\AdminQuestionOptionDTO.cs" />
+    <Compile Include="Admin\AdminRoleDTO.cs" />
+    <Compile Include="Admin\AdminStatsAccountOverviewDTO.cs" />
+    <Compile Include="Admin\AdminStatsByTestDTO.cs" />
+    <Compile Include="Admin\AdminStatsOverviewDTO.cs" />
+    <Compile Include="Admin\AdminStatsPartAccuracyDTO.cs" />
+    <Compile Include="Admin\AdminStatsRecentAttemptDTO.cs" />
+    <Compile Include="Admin\AdminTestDTO.cs" />
+    <Compile Include="Admin\ValidationResultDTO.cs" />
+    <Compile Include="LamBai\AttemptHistoryItemDTO.cs" />
+    <Compile Include="LamBai\AttemptOptionDTO.cs" />
+    <Compile Include="LamBai\AttemptPart7GroupDTO.cs" />
+    <Compile Include="LamBai\AttemptPassageDTO.cs" />
+    <Compile Include="LamBai\AttemptQuestionDTO.cs" />
+    <Compile Include="LamBai\AttemptReviewOptionDTO.cs" />
+    <Compile Include="LamBai\AttemptReviewQuestionDTO.cs" />
+    <Compile Include="LamBai\AttemptSummaryDTO.cs" />
+    <Compile Include="LamBai\HistoryTestHeaderDTO.cs" />
+    <Compile Include="NoiDungDe\EtsDTO.cs" />
+    <Compile Include="NoiDungDe\PartDTO.cs" />
+    <Compile Include="NoiDungDe\TestDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="TaiKhoan\AccountDTO.cs" />
+    <Compile Include="ThongKe\RecentAttemptStatsDTO.cs" />
+    <Compile Include="ThongKe\StatsByPartDTO.cs" />
+    <Compile Include="ThongKe\StatsByTestDTO.cs" />
+    <Compile Include="ThongKe\StatsOverviewDTO.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
